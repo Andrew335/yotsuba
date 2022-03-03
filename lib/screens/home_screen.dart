@@ -19,26 +19,11 @@ class _HomeScreenState extends State<HomeScreen> {
       cache.play('audiofile');
       isPlaying = true;
       print(isPlaying);
-      print(cache);
     } else {
-      player.stop();
-      cache.clearAll();
       isPlaying = false;
       print(isPlaying);
-      print(cache.toString());
     }
   }
-
-  // AudioCache cache = AudioCache(); // you have this
-  // AudioPlayer player = AudioPlayer(); // create this
-  //
-  // void _playFile(String soundFile) async {
-  //   player = await cache.play(soundFile); // assign player here
-  // }
-  //
-  // void _stopFile() {
-  //   player?.stop(); // stop the file like this
-  // }
 
   @override
   Widget build(BuildContext context) {
